@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProcessSelect</class>
+ <widget class="QWidget" name="ProcessSelect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>277</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Select Process</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_processSelect_search">
+       <property name="placeholderText">
+        <string>Filter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListView" name="listView_processSelect_processList"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_processSelect_refresh">
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_processSelect_select">
+       <property name="text">
+        <string>Select</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_processSelect_refresh</sender>
+   <signal>clicked()</signal>
+   <receiver>ProcessSelect</receiver>
+   <slot>pushButton_processSelect_refresh_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>73</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_processSelect_select</sender>
+   <signal>clicked()</signal>
+   <receiver>ProcessSelect</receiver>
+   <slot>pushButton_processSelect_select_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_processSelect_refresh_clicked()</slot>
+  <slot>pushButton_processSelect_select_clicked()</slot>
+ </slots>
+</ui>

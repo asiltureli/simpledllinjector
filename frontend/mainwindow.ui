@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>557</width>
+    <height>121</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SimpleDLLInjector v1.0.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+          <item>
+           <widget class="QPushButton" name="pushButton_selectDLL">
+            <property name="text">
+             <string>Select DLL</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_dllPath">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,5">
+          <item>
+           <widget class="QPushButton" name="pushButton_selectProcess">
+            <property name="text">
+             <string>Select Process</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_processName">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_inject">
+        <property name="text">
+         <string>Inject</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>557</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_selectDLL</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButton_selectDLL_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_selectProcess</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButton_selectProcess_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>55</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_inject</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButton_inject_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>198</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_selectDLL_clicked()</slot>
+  <slot>pushButton_selectProcess_clicked()</slot>
+  <slot>pushButton_inject_clicked()</slot>
+ </slots>
+</ui>
